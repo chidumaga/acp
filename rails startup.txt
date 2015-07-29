@@ -1,0 +1,19 @@
+RAILS GETTING STARTED
+
+- rails new app_name -d postgresql -T
+
+- rake db:create (RAILS_ENV=test/development)
+
+- run migrations = rake db:migrate
+
+- Add gems for testing:
+	- group :test do
+		gem 'rspec-rails'
+		gem 'capybara'
+	  end
+	  
+- Then run rails generate rspec:install. Edit spec/.rspec to add --color
+--format documentation
+--require spec_helper
+
+- Add this to spec/rails_helper.rb: require 'capybara/rails'
